@@ -1,0 +1,4 @@
+(base) shawns-air:module5-group-module5-group-498076-499414 shawnfong$ codehistories python -m http.server 8000
+Serving HTTP on :: port 8000 (http://[::]:8000/) ...
+^C
+Keyboard interrupt received, exiting.

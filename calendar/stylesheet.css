@@ -1,0 +1,13 @@
+.content-table {
+    width: 100%;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+.content-table tbody td {
+    empty-cells: show;
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 40px;
+}
+#logging_in {
+    background-image: url("../squirrels.jpeg");
+}
