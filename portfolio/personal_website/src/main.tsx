@@ -1,6 +1,7 @@
 import { MainLayout, SectionContainer } from "components";
 import { SectionIdEnum } from "types";
 import { IntroSection } from "sections";
+import { Divider } from "@mui/material";
 
 const sections = [
     {
@@ -33,6 +34,7 @@ export const Main: React.FC = () => {
     return <MainLayout>
         {sections.map(({component, sectionId}) => {
             return <SectionContainer sectionId={sectionId} key={sectionId}>
+                <Divider />
                 {component}
             </SectionContainer>; 
         })}

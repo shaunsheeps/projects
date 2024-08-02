@@ -3,3 +3,4 @@ declare module '*.jpeg' {
 
     export = value;
 }
+declare module '*.ttf';

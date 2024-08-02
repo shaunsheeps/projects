@@ -38,10 +38,11 @@
     "no-eval": "error",
     "no-nested-ternary": "error",
     "linebreak-style": ["warn", "windows"],
-    "no-trailing-spaces": "error",
+    "no-trailing-spaces": "off",
     "no-unsafe-finally": "error",
     "no-var": "error",
-    "object-curly-spacing": ["warn", "always"],
+    "object-curly-spacing": "off",
+    "object-curly-newline": "off",
     "object-property-newline": [
       "warn",
       {
@@ -52,6 +53,7 @@
     "jsx-quotes": ["warn", "prefer-double"],
 
     "@typescript-eslint/prefer-namespace-keyword": "error",
+    "@typescript-eslint/object-curly-spacing": "off",
 
     "indent": "off",
     "@typescript-eslint/indent": [
