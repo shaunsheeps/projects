@@ -43,7 +43,7 @@ export default function Carousel({
                 </button>
                 <button
                     onClick={next}
-                    className="p-1 rounded-full shadown bg-white/80 text-gray-800 hover:bg-white"
+                    className="p-1 rounded-full shadown bg-white/80 text-gray-800 hover:bg-white" 
                 >
                     <ChevronRight size={40}/> 
                 </button>
