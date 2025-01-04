@@ -12,10 +12,6 @@ export type NavigationProps = {
 
 const navigationItems = [
   {
-    text: 'Intro',
-    to: SectionIdEnum.intro,
-  },
-  {
     text: 'About',
     to: SectionIdEnum.about,
   },

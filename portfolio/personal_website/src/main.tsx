@@ -1,33 +1,29 @@
 import { MainLayout, SectionContainer } from "components";
 import { SectionIdEnum } from "types";
-import { IntroSection } from "sections";
+import { AboutSection, ProjectsSection, ResumeSection, InterestsSection, ContactSection } from "components/section-container/sections";
 import { Divider } from "@mui/material";
 
 const sections = [
     {
-        sectionId: SectionIdEnum.intro,
-        component: <IntroSection />
-    },
-    {
         sectionId: SectionIdEnum.about,
-        component: <IntroSection />
+        component: <AboutSection />,
     },
     {
         sectionId: SectionIdEnum.projects,
-        component: <IntroSection />
+        component: <ProjectsSection />,
     },
     {
         sectionId: SectionIdEnum.resume,
-        component: <IntroSection />
+        component: <ResumeSection/>,
     },
     {
         sectionId: SectionIdEnum.interests,
-        component: <IntroSection />
+        component: <InterestsSection/>,
     },
     {
         sectionId: SectionIdEnum.contact,
-        component: <IntroSection />
-    }
+        component: <ContactSection />,
+    },
 ];
 
 export const Main: React.FC = () => {
@@ -39,4 +35,4 @@ export const Main: React.FC = () => {
             </SectionContainer>; 
         })}
          </MainLayout>;
-}
+};

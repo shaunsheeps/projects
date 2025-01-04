@@ -12,7 +12,7 @@ const options = {};
 export const SectionContainer : React.FC<SectionContainerProps> = ({children, sectionId}) => {
 
     return (
-        <div id={sectionId} key={sectionId}>
+        <div id={sectionId} key={sectionId} >
             <Container>
                 <Box minHeight={"100vh"}>
                     {children}
