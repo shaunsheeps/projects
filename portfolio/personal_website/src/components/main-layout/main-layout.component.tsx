@@ -28,7 +28,7 @@ export const MainLayout: React.FC<MainLayoutProp> = ({ children }) => {
               <Box display="flex" alignItems="center" gap={0.5} sx= {{ cursor: 'pointer' }}>
                 <Typography variant="h2" sx={{ width: 'fit-content', color: 'white', fontFamily: 'cinderela' }}>
                   {' '}
-                  Personal Website
+                  About Me
                 </Typography>
               </Box>
             </AnchorLink>

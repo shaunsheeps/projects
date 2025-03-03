@@ -1,8 +1,9 @@
 import { Box, Typography } from "@mui/material";
 import Carousel from "./carousel.section";
 import logo from "../../../../assets/logo.jpeg";
+import './project.section.css';
 
-const slides = [logo]
+const slides = [logo];
 
 export const ProjectsSection: React.FC = () => {
   return (
