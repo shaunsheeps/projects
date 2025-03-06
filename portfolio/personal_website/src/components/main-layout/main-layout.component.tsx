@@ -20,7 +20,7 @@ export const MainLayout: React.FC<MainLayoutProp> = ({ children }) => {
   const isSmall = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
-    <Box height={'100vh'} sx={{backgroundColor: '#c0a891'}}>
+    <Box height={'100vh'}>
       <AppBar position="fixed" sx={{ background: 'black' }}>
         <Toolbar>
           <Box flexGrow={1}>
