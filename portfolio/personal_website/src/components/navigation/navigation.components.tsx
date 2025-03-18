@@ -53,7 +53,7 @@ export const Navigation: React.FC<NavigationProps> = ({ isSmall }) => {
   const mappedItems = navigationItems.map(({ text, to }) => {
     return (
       <AnchorLink key={to} href={`#${to}`} offset={isSmall ? '56px' : '64px'} className="all_unset">
-        <Button size="large" fullWidth={isSmall} onClick={onCloseHandler} sx={{color: 'white'}}>
+        <Button size="large" fullWidth={isSmall} onClick={onCloseHandler} sx={{color: isSmall ? 'black' : 'white'}}>
           <ThemeProvider theme={NavBarTheme}>
             <Typography variant="h4" sx={{ textTransform: 'none'}}>
               {text}
@@ -66,10 +66,10 @@ export const Navigation: React.FC<NavigationProps> = ({ isSmall }) => {
 
   return (
     <>
-      <Box display="flex" gap={2} sx={{ display: { xl: 'block', sm: 'none', xs: 'none' } }}>
+      <Box display="flex" gap={2} sx={{ display: { xs: 'none', md: 'flex' } }}>
         {mappedItems}
       </Box>
-      <IconButton color="inherit" onClick={onOpenHandler} sx={{ display: { xs: 'block', sm: 'block', xl: 'none' } }}>
+      <IconButton color="inherit" onClick={onOpenHandler} sx={{ display: { xs: 'block', md: 'none' } }}>
         <Menu />
       </IconButton>
       <Dialog

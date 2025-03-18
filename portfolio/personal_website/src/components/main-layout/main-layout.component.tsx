@@ -19,14 +19,16 @@ export const MainLayout: React.FC<MainLayoutProp> = ({ children }) => {
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down('sm'));
 
+console.log(isSmall);
+
   return (
     <Box height={'100vh'}>
       <AppBar position="fixed" sx={{ background: 'black' }}>
         <Toolbar>
           <Box flexGrow={1}>
-            <AnchorLink href={`#${SectionIdEnum.about}`} offset={isSmall ? '56px' : '64px'} className='all_unset' style={{color: "transparent"}}>
+            <AnchorLink href={`#${SectionIdEnum.about}`} offset={isSmall ? '56px' : '64px'} className='all_unset' style={{color: "transparent"}}>            
               <Box display="flex" alignItems="center" gap={0.5} sx= {{ cursor: 'pointer' }}>
-                <Typography variant="h2" sx={{ width: 'fit-content', color: 'white', fontFamily: 'cinderela' }}>
+                <Typography variant="h2" sx={{ width: 'fit-content', color: 'white'}}>
                   {' '}
                   About Me
                 </Typography>
@@ -42,4 +44,5 @@ export const MainLayout: React.FC<MainLayoutProp> = ({ children }) => {
       </Box>
     </Box>
   );
+
 };
