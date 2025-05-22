@@ -1,12 +1,8 @@
-* {
+html, body, #root {
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: #111827;
     scroll-behavior: smooth;
-}
-.all.unset {
-    all: unset;
-    color: white;
-}
-.section {
-    color: black;
 }

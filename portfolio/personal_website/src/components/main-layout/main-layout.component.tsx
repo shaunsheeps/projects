@@ -1,12 +1,5 @@
 import { Navigation } from 'components/navigation/navigation.components';
-import {
-    AppBar,
-    Box,
-    Toolbar,
-    Typography,
-    useMediaQuery,
-    useTheme,
-} from '@mui/material';
+import { AppBar, Box, Toolbar, Typography, useMediaQuery, useTheme} from '@mui/material';
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { SectionIdEnum } from 'types';
@@ -19,10 +12,8 @@ export const MainLayout: React.FC<MainLayoutProp> = ({ children }) => {
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down('sm'));
 
-console.log(isSmall);
-
   return (
-    <Box height={'100vh'}>
+    <Box>
       <AppBar position="fixed" sx={{ background: 'black' }}>
         <Toolbar>
           <Box flexGrow={1}>
@@ -44,5 +35,4 @@ console.log(isSmall);
       </Box>
     </Box>
   );
-
 };
