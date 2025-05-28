@@ -7,10 +7,7 @@ export type SectionContainerProps = {
     bgColor?: string; 
 };
 
-const options = {};
-
 export const SectionContainer : React.FC<SectionContainerProps> = ({children, sectionId, bgColor}) => {
-
     return (
         <div id={sectionId} key={sectionId} style={{ backgroundColor : bgColor}} >
             <Container >
